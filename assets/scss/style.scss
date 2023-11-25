@@ -1,0 +1,13 @@
+$primary: #0ea5e9;
+$secondary: #22c55e;
+$success: #06b6d4;
+$info: #10b981;
+$warning: #eab308;
+$danger: #ef4444;
+$light: #ffff;
+$dark: #1e293b;
+@import "../lib/bootstrap-5.3.2/scss/bootstrap.scss";
+@import "bootstrap";
+@import "config";
+@import "header";
+@import "./hero";

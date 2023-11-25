@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megahunt - Hệ thống thiết kế web tại Tuyên Quang</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/lib/fontawesome-free-6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <header id="header" class="header py-3 ">
+    <div class="container d-flex justify-content-between align-items-center">
+      <i class="menu-icon-mobile fa-solid fa-bars header__mobile-icon fs-1 d-lg-none text-primary"></i>
+      <a href="/">
+        <img src="./assets/images/logo.png" class="header__logo"
+          alt="Megahunt - Hệ thống thiết kế web tại Tuyên Quang" /></a>
+      <i class="fa-solid fa-magnifying-glass header__mobile-icon fs-5 d-lg-none text-primary"></i>
+      <ul id="header__menu"
+        class="navbar-nav header__menu d-flex align-items-center flex-column flex-lg-row gap-lg-3 m-0 p-lg-0">
+        <!-- For mobile -->
+        <li class="d-flex justify-content-between align-items-center w-100 mb-3 d-lg-none">
+          <strong class="fs-1">Menu</strong>
+          <i class="menu-icon-mobile fa-solid fa-xmark fs-2 text-primary"></i>
+        </li>
+        <!-- For mobile -->
+        <li class="nav-item  dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Xây dựng Website
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Thiết kế Website</a></li>
+            <li><a class="dropdown-item" href="#">Bảng giá</a></li>
+            <li><a class="dropdown-item" href="#">Kho giao diện</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Về chúng tôi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Đăng nhập</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary text-white rounded-pill" href="#">Đăng ký</a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <div class="hero">
+    <video autoplay muted plays-inline loop class="hero__video">
+      <source src="./assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100 pt-4 d-flex justify-content-between flex-column">
+      <a href="/" class="hero__logo">
+        <img src="./assets/images/logo-dark.png" class="header__logo"
+          alt="Megahunt - Hệ thống thiết kế web tại Tuyên Quang" /></a>
+      <div class="hero__content ">
+        <h1 class="hero__content-title mb-5">Phát triển sản phẩm có sức ảnh hưởng,<br> xây dựng thương hiệu có ý nghĩa
+        </h1>
+        <div class="d-flex gap-5 align-items-center ">
+          <button class="btn btn-outline-light fs-6 fw-medium">Liên hệ chúng tôi</button>
+          <button type="button" class="btn hero__button"><a href="#"
+              class="hero__button-link text-white fs-6 fw-medium">Sản phẩm hiện
+              có</a></button>
+          <button type="button" class="btn hero__button"><a href="#" title="Về chúng tôi"
+              class="hero__button-link text-white fs-6 fw-medium">Về chúng
+              tôi</a></button>
+
+        </div>
+      </div>
+      <div class="d-flex justify-content-center flex-column">
+        <span class="scroll-btn">
+          <a href="#" title="Cuộn xuống">
+            <span class="mouse">
+              <span>
+              </span>
+            </span>
+          </a>
+
+        </span>
+        <p class="text-center text-white">Cuộn xuống</p>
+
+      </div>
+    </div>
+  </div>
+  <div id="overlay" class="position-fixed top-0 start-0 end-0 bottom-0"></div>
+  <script src="./assets/lib/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
+  <script>
+    // handle menu mobile
+    let iconMenu = document.querySelectorAll(".menu-icon-mobile");
+    let menu = document.getElementById("header__menu");
+    let overlay = document.getElementById("overlay");
+    let header = document.getElementById('header')
+    iconMenu.forEach((item) => {
+      item.addEventListener("click", () => {
+        menu.classList.toggle("header__active");
+        overlay.classList.toggle("overlay-show");
+      });
+    });
+    // handle scroll navbar
+    console.log(window);
+    if (window.outerWidth >= 1024) {
+     let currentURL = window.location.pathname
+      if (currentURL == '/') {
+        header.style.top = "-10%"
+        header.style.opacity = "0"
+      }
+      window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 200) {
+
+          header.style.top = "0"
+          header.style.opacity = "1"
+        } else {
+          header.style.top = "-10%"
+          header.style.opacity = "0"
+        }
+      });
+    }
+    
+  </script>
+</body>
+
+</html>

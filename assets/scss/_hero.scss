@@ -1,0 +1,80 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.8), rgba(12, 3, 51, 0.8));
+  &__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  &__content {
+    &-title {
+      color: $white;
+      font-size: 65px;
+      font-weight: 500;
+    }
+  }
+  &__button {
+    &-link {
+      text-decoration: none;
+      position: relative;
+      &::before {
+        background: $white;
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        transition-duration: 0.3s;
+        transition-property: width;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        width: 0;
+      }
+    }
+    &:hover &-link::before {
+      width: 100% !important;
+    }
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .hero {
+    &__video {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .hero {
+    &__video {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    &__content {
+      &-title {
+        font-size: 30px;
+      }
+    }
+    &__button {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    &__content {
+      &-title {
+        font-size: 50px;
+      }
+    }
+  }
+}
