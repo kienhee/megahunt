@@ -53,7 +53,7 @@
 
     </div>
   </header>
-  <div class="hero">
+  <section class="hero">
     <video autoplay muted plays-inline loop class="hero__video">
       <source src="./assets/video/hero.mp4" type="video/mp4">
     </video>
@@ -77,7 +77,7 @@
       </div>
       <div class="d-flex justify-content-center flex-column">
         <span class="scroll-btn">
-          <a href="#" title="Cuộn xuống">
+          <a href="#scroll-down" title="Cuộn xuống">
             <span class="mouse">
               <span>
               </span>
@@ -89,7 +89,55 @@
 
       </div>
     </div>
-  </div>
+  </section>
+  <section id="scroll-down" class="container py-5 mt-5">
+    <h2 class="fs-1 fw-bold text-center mb-5">Chúng tôi làm gì cho bạn? <span class="text-primary">Hàng ngày.</span>
+    </h2>
+    <div class="row justify-content-center m-auto gap-3 gap-md-0" style="max-width: 800px;">
+      <div class="col-md-4">
+        <div class="card py-5 shadow-sm rounded d-flex flex-column justify-content-center text-center h-100"
+          style="border: none;">
+          <img src="./assets/images/icons/advisory.png" class="card-img-top  m-auto" style="width: 60px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-secondary  fw-medium mb-3">Đối Tác Đáng Tin Cậy
+              Của Bạn</h5>
+            <p class="card-text text-dark">Đội ngũ giàu kinh nghiệm của chúng tôi hướng dẫn bạn từ ý tưởng đến thực
+              hiện, tận dụng
+              chuyên môn để cung cấp các giải
+              pháp tốt nhất cho nhu cầu của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card py-5 shadow-sm rounded d-flex flex-column justify-content-center text-center h-100"
+          style="border: none;">
+          <img src="./assets/images/icons/advisory.png" class="card-img-top  m-auto" style="width: 60px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-secondary  fw-medium mb-3">Chuyên Gia Công Nghệ
+              Của Bạn</h5>
+            <p class="card-text text-dark">Các chuyên gia lành nghề của chúng tôi cung cấp các giải pháp CNTT tùy chỉnh,
+              có thể mở rộng và chất lượng, đảm bảo bạn
+              nhận được các dịch vụ theo yêu cầu của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card py-5 shadow-sm rounded d-flex flex-column justify-content-center text-center h-100"
+          style="border: none;">
+          <img src="./assets/images/icons/advisory.png" class="card-img-top  m-auto" style="width: 60px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-secondary  fw-medium mb-3">Đối Tác Đáng Tin Cậy
+              Của Bạn</h5>
+            <p class="card-text text-dark">Chúng tôi cung cấp các dịch vụ bảo trì, tùy chỉnh và phát triển ứng dụng cả
+              tại chỗ và ngoại vi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div id="overlay" class="position-fixed top-0 start-0 end-0 bottom-0"></div>
   <script src="./assets/lib/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
   <script>
@@ -107,14 +155,14 @@
     // handle scroll navbar
     console.log(window);
     if (window.outerWidth >= 1024) {
-     let currentURL = window.location.pathname
+      let currentURL = window.location.pathname
       if (currentURL == '/') {
         header.style.top = "-10%"
         header.style.opacity = "0"
       }
       window.addEventListener("scroll", function () {
 
-        if (window.scrollY > 200) {
+        if (window.scrollY > 250) {
 
           header.style.top = "0"
           header.style.opacity = "1"
@@ -124,7 +172,7 @@
         }
       });
     }
-    
+
   </script>
 </body>
 
