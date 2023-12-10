@@ -149,7 +149,10 @@ a {
   }
 }
 .section-title {
+  
   h2 {
+    margin: 0 auto;
+    max-width: 800px;
     font-size: 40px;
     font-weight: 600;
   }
