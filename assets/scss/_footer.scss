@@ -1,0 +1,44 @@
+.footer {
+  color: #b0b9ae;
+  &-social {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    &.btn-link {
+      display: block;
+      margin-bottom: 5px;
+      padding: 0;
+      text-align: left;
+      color: #b0b9ae;
+      font-weight: normal;
+      text-transform: capitalize;
+      transition: 0.3s;
+      text-decoration: none;
+      &::before {
+        position: relative;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+      &:hover {
+        color: $light;
+        letter-spacing: 1px;
+        box-shadow: none;
+      }
+    }
+  }
+}
+.copyright {
+  color: #b0b9ae;
+  background: #111111;
+  a {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}

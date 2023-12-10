@@ -1,5 +1,7 @@
 $primary: #0ea5e9;
+$primary-light: #eff6ff;
 $secondary: #22c55e;
+$secondary-light: #dcfce7;
 $success: #06b6d4;
 $info: #10b981;
 $warning: #eab308;
@@ -11,3 +13,9 @@ $dark: #1e293b;
 @import "config";
 @import "header";
 @import "./hero";
+@import "./service";
+@import "./team";
+@import "./testimonial";
+@import "./footer";
+@import "./blog-home";
+@import "./blog";
