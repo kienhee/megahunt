@@ -1,5 +1,6 @@
 $primary: #0ea5e9;
 $primary-light: #eff6ff;
+$primary-deep: #1e40af;
 $secondary: #22c55e;
 $secondary-light: #dcfce7;
 $secondary-deep: #166534;
@@ -10,7 +11,7 @@ $danger: #ef4444;
 $light: #ffff;
 $dark: #1e293b;
 $nav-pills-border-radius: 5px;
-// $modal-header-border-width: 0px;
+$form-check-input-checked-bg-color: $secondary;
 @import "../lib/bootstrap-5.3.2/scss/bootstrap.scss";
 @import "bootstrap";
 @import "config";

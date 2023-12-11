@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/lib/fontawesome-free-6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
 <body>
@@ -60,18 +62,28 @@
         </div>
     </header>
 
-    <section class=" container-xxl pt-5 breadcrumb-section">
-        <div class="container">
-            <div class="section-title position-relative  text-center mb-5 pb-2  fadeInUp">
-                <h6 class="position-relative d-inline text-primary ps-4">Kho giao diện</h6>
-                <h2 class="mt-2 mb-3"> <span class="text-secondary">Danh sách</span> tất cả giao diện
-                </h2>
-                <p class="mb-3 mx-auto text-muted" style="max-width: 700px ">Hơn 400 mẫu giao diện web chuẩn SEO, tùy
-                    biến dễ dàng,
-                    phù hợp với mọi ngành hàng</p>
+    <section class=" py-5">
+        <div class="bg-banner  py-5 mb-3">
+            <div class="container py-md-5 ">
+                <div class="section-title position-relative  text-center mb-4 pb-2  fadeInUp">
+                    <h6 class="position-relative d-inline text-secondary  ps-4 ">Kho giao diện</h6>
+                    <h2 class="mt-2 mb-3"> Danh sách <span class="text-secondary">tất cả giao diện</span>
+                    </h2>
+                    <p class="mb-3 mx-auto text-muted" style="max-width: 700px ">Hơn 400+ mẫu giao diện web chuẩn SEO,
+                        tùy
+                        biến dễ dàng,
+                        phù hợp với mọi ngành hàng</p>
+                </div>
+                <div class="d-flex search-input mx-auto mb-5">
+                    <input class="form-control rounded-pill px-3" id="searchInput" placeholder="" type="text"
+                        placeholder="Bạn tìm giao diện gì?">
+                    <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                </div>
             </div>
+        </div>
 
-            <div class="row">
+        <div class="container">
+            <div class="row ">
                 <div id="theme__category" class="col-lg-3 px-4 h-100 theme__category ">
                     <button id="theme__category-btn-mobile"
                         class="btn btn-secondary text-white rounded-0 theme__category-btn-mobile "><i
@@ -127,7 +139,7 @@
                     </form>
                 </div>
                 <div class="col-md-12 col-lg-9 px-md-4">
-                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-center gap-2 ">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-md-center gap-2 ">
                         <span class="fw-medium me-2">Sắp xếp theo:</span>
                         <ul class="d-flex align-items-center gap-2 mb-0 flex-wrap">
                             <li><a href="" class="theme__btn-filter theme__btn-filter-active">Giá<i
@@ -136,13 +148,9 @@
                             <li><a href="" class="theme__btn-filter">Được mua nhiều nhất</a></li>
                             <li><a href="" class="theme__btn-filter">Mới nhất</a></li>
                         </ul>
-
-
-
-
                     </div>
                     <hr class="mb-4">
-                    <div class="row gap-4">
+                    <div class="row gap-4 mb-5">
                         <div
                             class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
                             <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
@@ -209,6 +217,10 @@
                             </div>
                         </div>
 
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="text-secondary fw-medium">Xem thêm giao diện <i
+                                class="fa-solid fa-caret-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -295,6 +307,16 @@
     <script src="./assets/lib/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+        // Use Typed.js for typing effect in placeholder
+        var options = {
+            strings: ["Bạn tìm kiếm giao diện gì?", "Ngành hàng", "May mặc.."],
+            typeSpeed: 100,  // Typing speed (milliseconds)
+            backSpeed: 25,  // Backspacing speed (milliseconds)
+            loop: true      // Loop indefinitely
+        };
+        var typed = new Typed("#searchInput", options);
+    </script>
 </body>
 
 </html>

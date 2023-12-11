@@ -39,6 +39,35 @@ a {
 .text-secondary-deep {
   color: $secondary-deep;
 }
+.text-primary-deep {
+  color: $primary-deep;
+}
+.search-input {
+  max-width: 600px;
+  position: relative;
+}
+.search-input .form-control {
+  height: 45px;
+  color: $dark;
+}
+
+.search-input .form-control:focus {
+  box-shadow: none;
+  border: 1px solid $primary;
+}
+
+.search-input i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.bg-banner {
+  background-image: url("../images/bg-banner.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @-webkit-keyframes ani-mouse {
   0% {
     opacity: 1;
@@ -211,7 +240,7 @@ a {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
+  right: 15px;
   bottom: 30px;
   z-index: 99;
 }

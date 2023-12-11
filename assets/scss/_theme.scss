@@ -21,7 +21,7 @@
 
   &__item {
     overflow: hidden;
-    width: calc(100% / 3 - 1.5rem);
+    width: calc(100% / 3 - 1rem);
     padding: 0;
     @media screen and (max-width: 767px) {
       width: 100%;
@@ -54,7 +54,7 @@
       &-btn-mobile {
         position: absolute;
         display: block;
-        top: 20%;
+        top: 30%;
         left: -38px;
       }
       &-show {
