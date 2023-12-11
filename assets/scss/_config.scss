@@ -10,8 +10,9 @@ body {
 }
 li {
   list-style: none;
+  text-decoration: none;
 }
-ul{
+ul {
   padding: 0;
 }
 a {
@@ -30,6 +31,10 @@ a {
   &:hover {
     color: $light;
   }
+}
+.nav-pills .nav-link {
+  border: 1px solid;
+  color: $dark;
 }
 @-webkit-keyframes ani-mouse {
   0% {
@@ -149,7 +154,6 @@ a {
   }
 }
 .section-title {
-  
   h2 {
     margin: 0 auto;
     max-width: 800px;

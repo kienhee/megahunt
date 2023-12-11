@@ -3802,7 +3802,7 @@ textarea.form-control-lg {
 }
 
 .nav-pills {
-  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-border-radius: 5px;
   --bs-nav-pills-link-active-color: #fff;
   --bs-nav-pills-link-active-bg: #0ea5e9;
 }
@@ -11884,6 +11884,7 @@ body {
 
 li {
   list-style: none;
+  text-decoration: none;
 }
 
 ul {
@@ -11907,6 +11908,11 @@ a {
 
 .hover-color-white:hover {
   color: white;
+}
+
+.nav-pills .nav-link {
+  border: 1px solid;
+  color: #1e293b;
 }
 
 @-webkit-keyframes ani-mouse {
@@ -13496,6 +13502,10 @@ a {
   width: 96px;
   height: 96px;
   object-fit: cover;
+}
+
+.process__list li {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

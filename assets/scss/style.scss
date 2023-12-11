@@ -8,6 +8,8 @@ $warning: #eab308;
 $danger: #ef4444;
 $light: #ffff;
 $dark: #1e293b;
+$nav-pills-border-radius: 5px;
+
 @import "../lib/bootstrap-5.3.2/scss/bootstrap.scss";
 @import "bootstrap";
 @import "config";
@@ -20,3 +22,4 @@ $dark: #1e293b;
 @import "./blog-home";
 @import "./blog";
 @import "./tech";
+@import "./process";
