@@ -80,3 +80,15 @@ $(".blog__home-carousel, .testimonial-carousel").owlCarousel({
     },
   },
 });
+
+let themeFilter = document.getElementById("theme__category-btn-mobile");
+let themeFilterIcon = document.getElementById(
+  "theme__category-btn-mobile-icon"
+);
+let themeCategory = document.getElementById("theme__category");
+
+themeFilter.addEventListener("click", () => {
+  themeCategory.classList.toggle("theme__category-show");
+  themeFilterIcon.classList.toggle("fa-xmark");
+  overlay.classList.toggle("overlay-show");
+});

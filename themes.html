@@ -36,7 +36,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Thiết kế Website</a></li>
                         <li><a class="dropdown-item" href="price.html">Bảng giá</a></li>
-                        <li><a class="dropdown-item" href="#">Kho giao diện</a></li>
+                        <li><a class="dropdown-item" href="themes.html">Kho giao diện</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -59,24 +59,158 @@
 
         </div>
     </header>
-    <section class="breadcrumb-section fw-medium">
-        <nav aria-label="breadcrumb" class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="#">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Liên hệ tư vấn</li>
-            </ol>
-        </nav>
-    </section>
-    <section class=" container-xxl pt-5">
+
+    <section class=" container-xxl pt-5 breadcrumb-section">
         <div class="container">
             <div class="section-title position-relative  text-center mb-5 pb-2  fadeInUp">
-                <h6 class="position-relative d-inline text-primary ps-4">Bảng giá</h6>
-                <h2 class="mt-2 mb-3"> <span class="text-secondary">Bảng giá</span> chi phí thiết kế Website trọn gói
+                <h6 class="position-relative d-inline text-primary ps-4">Kho giao diện</h6>
+                <h2 class="mt-2 mb-3"> <span class="text-secondary">Danh sách</span> tất cả giao diện
                 </h2>
-                <p class="mb-3 mx-auto" style="max-width: 600px;font-size: 14px; ">Hãy tham khảo báo giá làm website,
-                    chi phí thiết kế web tại Daca và ĐĂNG KÝ gói giải pháp phù hợp
-                    với nhu cầu làm
-                    website của bạn</p>
+                <p class="mb-3 mx-auto text-muted" style="max-width: 700px ">Hơn 400 mẫu giao diện web chuẩn SEO, tùy
+                    biến dễ dàng,
+                    phù hợp với mọi ngành hàng</p>
+            </div>
+
+            <div class="row">
+                <div id="theme__category" class="col-lg-3 px-4 h-100 theme__category ">
+                    <button id="theme__category-btn-mobile"
+                        class="btn btn-secondary text-white rounded-0 theme__category-btn-mobile "><i
+                            id="theme__category-btn-mobile-icon" class="fa-solid fa-filter"></i></button>
+                    <form>
+                        <h6 class="mb-3"><i class="fa-solid fa-list me-2 text-muted "></i>Danh mục</h6>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="1" id="radioExample1" />
+                            <label class="form-check-label text-muted " for="radioExample1">&nbsp;&nbsp;Tất cả</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="2" id="radioExample2" />
+                            <label class="form-check-label text-muted " for="radioExample2">&nbsp;&nbsp;Mỹ phẩm - Làm
+                                đẹp</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="3" id="radioExample3" />
+                            <label class="form-check-label text-muted " for="radioExample3">&nbsp;&nbsp;Thực phẩm - Nhà
+                                hàng</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="4" id="radioExample4" />
+                            <label class="form-check-label text-muted " for="radioExample4">&nbsp;&nbsp; Thực phẩm - Nhà
+                                hàng</label>
+                        </div>
+
+                        <hr>
+                        <h6 class="mb-3"><i class="fa-solid fa-tag me-2 text-muted fs-5"></i><ion-icon
+                                name="pricetags-outline"></ion-icon> Khoảng giá</h6>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="1" id="radioExample1" />
+                            <label class="form-check-label text-muted " for="radioExample1">&nbsp;&nbsp;Miễn phí</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="2" id="radioExample2" />
+                            <label class="form-check-label text-muted " for="radioExample2">&nbsp;&nbsp;500,000 -
+                                1,000,000 đ</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="3" id="radioExample3" />
+                            <label class="form-check-label text-muted " for="radioExample3">&nbsp;&nbsp;1,000,000 -
+                                2,000,000 đ</label>
+                        </div>
+                        <div class="list-group-item mb-3">
+                            <input class="form-check-input" type="radio" name="category" value="4" id="radioExample4" />
+                            <label class="form-check-label text-muted " for="radioExample4">&nbsp;&nbsp; 2,000,000 -
+                                3,000,000 đ</label>
+                        </div>
+                        <hr>
+                        <button type="submit"
+                            class="btn btn-outline-secondary w-100 fw-medium text-uppercase hover-color-white">Tìm
+                            Kiếm</button>
+                    </form>
+                </div>
+                <div class="col-md-12 col-lg-9 px-md-4">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-center gap-2 ">
+                        <span class="fw-medium me-2">Sắp xếp theo:</span>
+                        <ul class="d-flex align-items-center gap-2 mb-0 flex-wrap">
+                            <li><a href="" class="theme__btn-filter theme__btn-filter-active">Giá<i
+                                        class="fa-solid fa-sort ms-2"></i></a></li>
+                            <li><a href="" class="theme__btn-filter">Dưới 1 triệu</a></li>
+                            <li><a href="" class="theme__btn-filter">Được mua nhiều nhất</a></li>
+                            <li><a href="" class="theme__btn-filter">Mới nhất</a></li>
+                        </ul>
+
+
+
+
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row gap-4">
+                        <div
+                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
+                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
+                            <div class="p-3 d-flex flex-column w-100">
+                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
+                                <p class="text-secondary fw-medium">Miễn phí</p>
+                                <div class="d-flex gap-3">
+                                    <a href="" class="btn btn-secondary rounded-pill text-white">Xem thử</a>
+                                    <a href="" class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
+                                        tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
+                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
+                            <div class="p-3 d-flex flex-column w-100">
+                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
+                                <p class="text-danger fs-6 fw-medium">800.000đ</p>
+                                <div class="d-flex gap-3">
+                                    <a href="" class="btn btn-secondary rounded-pill text-white">Xem thử</a>
+                                    <a href="" class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
+                                        tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
+                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
+                            <div class="p-3 d-flex flex-column w-100">
+                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
+                                <p class="text-secondary fw-medium">Miễn phí</p>
+                                <div class="d-flex gap-3">
+                                    <a href="" class="btn btn-secondary rounded-pill text-white">Xem thử</a>
+                                    <a href="" class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
+                                        tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
+                            <img src="./assets/images/theme-demo-2.jpg" class="theme__img img-fluid" alt="">
+                            <div class="p-3 d-flex flex-column w-100">
+                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
+                                <p class="text-secondary fw-medium">Miễn phí</p>
+                                <div class="d-flex gap-3">
+                                    <a href="" class="btn btn-secondary rounded-pill text-white">Xem thử</a>
+                                    <a href="" class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
+                                        tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
+                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
+                            <div class="p-3 d-flex flex-column w-100">
+                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
+                                <p class="text-secondary fw-medium">Miễn phí</p>
+                                <div class="d-flex gap-3">
+                                    <a href="" class="btn btn-secondary rounded-pill text-white">Xem thử</a>
+                                    <a href="" class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
+                                        tiết</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>

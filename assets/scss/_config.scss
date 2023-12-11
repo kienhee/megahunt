@@ -36,6 +36,9 @@ a {
   border: 1px solid;
   color: $dark;
 }
+.text-secondary-deep {
+  color: $secondary-deep;
+}
 @-webkit-keyframes ani-mouse {
   0% {
     opacity: 1;
@@ -240,6 +243,7 @@ a {
     background: #faf5bb;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .section-title {
     h2 {

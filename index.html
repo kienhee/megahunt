@@ -35,7 +35,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Thiết kế Website</a></li>
             <li><a class="dropdown-item" href="price.html">Bảng giá</a></li>
-            <li><a class="dropdown-item" href="#">Kho giao diện</a></li>
+            <li><a class="dropdown-item" href="themes.html">Kho giao diện</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -67,10 +67,12 @@
         <img src="./assets/images/logo-dark.png" class="header__logo"
           alt="Megahunt - Hệ thống thiết kế web tại Tuyên Quang" /></a>
       <div class="hero__content ">
-        <h1 class="hero__content-title mb-5">Phát triển sản phẩm có sức ảnh hưởng,<br> xây dựng thương hiệu có ý nghĩa
+        <h1 class="hero__content-title mb-5">Phát triển sản phẩm có sức ảnh hưởng,<br> xây dựng thương hiệu mang đầy giá
+          trị.
         </h1>
         <div class="d-flex gap-5 align-items-center ">
-          <button class="btn btn-outline-light fs-6 fw-medium">Liên hệ chúng tôi</button>
+          <button data-bs-toggle="modal" data-bs-target="#contactModal"
+            class="btn btn-outline-light fs-6 fw-medium">Liên hệ chúng tôi</button>
           <button type="button" class="btn hero__button"><a href="#"
               class="hero__button-link text-white fs-6 fw-medium">Sản phẩm hiện
               có</a></button>
@@ -95,6 +97,68 @@
       </div>
     </div>
   </section>
+  <!--Contact Modal -->
+  <div class="modal fade " id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5">Gửi yêu cầu tư vấn miễn phí</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- <div class="d-flex flex-column justify-content-center align-items-center">
+          <img src="./assets/images/logo.png" class="mb-3 w-50"  alt="">
+          
+        </div> -->
+        <div class="modal-body">
+          <div class="  fadeInUp">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                  <label for="name">Họ và tên</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="mail" placeholder="email">
+                  <label for="mail">email</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="mobile" placeholder="Số điện thoại">
+                  <label for="mobile">Số điện thoại</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select" id="service">
+                    <option selected>Digital Marketing</option>
+                    <option value="">Social Marketing</option>
+                    <option value="">Content Marketing</option>
+                    <option value="">E-mail Marketing</option>
+                  </select>
+                  <label for="service">Lựa chọn một dịch vụ</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Để lại nội dung tại đây." id="message"
+                    style="height: 130px"></textarea>
+                  <label for="message">Nội dung</label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase" type="submit">Gửi yêu
+                  cầu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!-- Service Start -->
   <section id="scroll-down" class="container py-5">
     <div class="container px-lg-5">
@@ -207,6 +271,10 @@
         </div>
         <div
           class="  col-md-3 col-lg-2 technology__item shadow-sm p-5 d-flex justify-content-center align-items-center  rounded-4">
+          <img src="./assets/images/logo/wordpress.png" class="technology__img" alt="">
+        </div>
+        <div
+          class="  col-md-3 col-lg-2 technology__item shadow-sm p-5 d-flex justify-content-center align-items-center  rounded-4">
           <img src="./assets/images/logo/flutter.png" class="technology__img" alt="">
         </div>
         <div
@@ -217,6 +285,7 @@
           class="  col-md-3 col-lg-2 technology__item shadow-sm p-5 d-flex justify-content-center align-items-center  rounded-4">
           <img src="./assets/images/logo/figma.png" class="technology__img" alt="">
         </div>
+
       </div>
     </div>
   </section>
