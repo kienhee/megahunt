@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/lib/fontawesome-free-6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
+
+</head>
+
+<body>
+
+  <header class="bg-primary py-2">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center ">
+        <a href="javascript:void()" onclick="history.back()" class=" fw-medium  text-white"> <i
+            class="fa-solid fa-reply"></i> Quay lại</a>
+        <ul class="text-light  fw-medium d-flex gap-3 mb-0 theme-buttons">
+          <li class="theme-preview-mobile"><a href="javascript:void()" onclick="preview('mobile')"><i
+                class="fa-solid fa-mobile-screen-button"></i> Mobile</a>
+          </li>
+          <li class="theme-preview-tablet"><a href="javascript:void()" onclick="preview('tablet')"><i
+                class="fa-solid fa-tablet-screen-button"></i> Table</a>
+          </li>
+          <li class="theme-preview-desktop active"><a href="javascript:void()" onclick="preview('desktop')"><i
+                class="fa-solid fa-desktop"></i> Desktop</a></li>
+        </ul>
+        <button class="btn btn-secondary rounded-pill text-white fw-medium">Chọn giao diện này</button>
+      </div>
+    </div>
+  </header>
+  <div class="theme-preview-wrapper d-flex justify-content-center">
+    <iframe id="previewFrame" src="https://daca.vn/speak-01" frameborder="0"></iframe>
+  </div>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+      class="fa-solid fa-arrow-up text-white"></i></a>
+
+
+  <div id="overlay" class="position-fixed top-0 start-0 end-0 bottom-0"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./assets/lib/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
+  <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    function preview(device) {
+      var frame = document.getElementById('previewFrame');
+      var buttons = document.querySelectorAll('.theme-buttons li');
+
+      if (device === 'mobile') {
+        frame.style.width = '375px';
+        frame.style.height = '667px';
+      } else if (device === 'tablet') {
+        frame.style.width = '768px';
+        frame.style.height = '1024px';
+      } else if (device === 'desktop') {
+        frame.style.width = '100%';
+        frame.style.height = '100vh';
+      }
+
+      // Xóa class 'active' từ tất cả các nút
+      buttons.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+
+      // Thêm class 'active' cho nút được chọn
+      event.target.parentNode.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
