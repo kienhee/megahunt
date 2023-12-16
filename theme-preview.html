@@ -19,7 +19,7 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center ">
         <a href="javascript:void()" onclick="history.back()" class=" fw-medium  text-white"> <i
-            class="fa-solid fa-reply"></i> Quay lại</a>
+            class="fa-solid fa-reply"></i> Quay lại chi tiết</a>
         <ul class="text-light  fw-medium d-flex gap-3 mb-0 theme-buttons">
           <li class="theme-preview-mobile"><a href="javascript:void()" onclick="preview('mobile')"><i
                 class="fa-solid fa-mobile-screen-button"></i> Mobile</a>
@@ -30,12 +30,58 @@
           <li class="theme-preview-desktop active"><a href="javascript:void()" onclick="preview('desktop')"><i
                 class="fa-solid fa-desktop"></i> Desktop</a></li>
         </ul>
-        <button class="btn btn-secondary rounded-pill text-white fw-medium">Chọn giao diện này</button>
+        <button class="btn btn-secondary rounded-pill text-white fw-medium" data-bs-toggle="modal"
+          data-bs-target="#registerThemeModal">Chọn giao diện này</button>
       </div>
     </div>
   </header>
   <div class="theme-preview-wrapper d-flex justify-content-center">
     <iframe id="previewFrame" src="https://daca.vn/speak-01" frameborder="0"></iframe>
+  </div>
+  <!-- registerThemeModal -->
+  <div class="modal fade " id="registerThemeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <button type="button" class="btn bg-black text-white opacity-70 rounded-circle custom-modal-btn"
+          data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-header justify-content-center flex-column">
+          <!-- <img src="./assets/images/logo.png" class="mb-3" style="width: 180px;" alt=""> -->
+          <h3>Mẫu giao diện: Edulearn 05</h3>
+          <small class="mb-0 text-muted">Mã giao diện: <strong>YSOH6TQLI7</strong></small>
+        </div>
+
+        <div class="modal-body">
+          <div class="  fadeInUp">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                  <label for="name">Họ và tên</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="mail" placeholder="email">
+                  <label for="mail">email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="mobile" placeholder="Số điện thoại">
+                  <label for="mobile">Số điện thoại</label>
+                </div>
+              </div>
+
+              <div class="col-12 text-center">
+                <button class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase rounded-pill"
+                  type="submit">Đăng ký</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i

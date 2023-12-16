@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/lib/fontawesome-free-6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
+
 </head>
 
 <body>
@@ -19,7 +20,8 @@
       <a href="/">
         <img src="./assets/images/logo.png" class="header__logo"
           alt="Megahunt - Hệ thống thiết kế web tại Tuyên Quang" /></a>
-      <i class="fa-solid fa-magnifying-glass header__mobile-icon fs-5 d-lg-none text-primary"></i>
+      <i class="fa-solid fa-magnifying-glass header__mobile-icon fs-5 d-lg-none text-primary" data-bs-toggle="modal"
+        data-bs-target="#searchModal"></i>
       <ul id="header__menu"
         class="navbar-nav header__menu d-flex align-items-center flex-column flex-lg-row gap-lg-3 m-0 p-lg-0">
         <!-- For mobile -->
@@ -38,21 +40,31 @@
             <li><a class="dropdown-item" href="themes.html">Kho giao diện</a></li>
           </ul>
         </li>
+        <li class="nav-item  dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Cộng tác
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Chương trình đại lý</a></li>
+            <li><a class="dropdown-item" href="">Cộng tác viên</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Về chúng tôi</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="blog.html">Blog</a>
         </li>
 
+
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Về chúng tôi</a>
+          <a class="nav-link" href="javascript:void()" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+              class="fa-solid fa-magnifying-glass"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Liên hệ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Đăng nhập</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary text-white rounded-pill" href="#">Đăng ký</a>
+          <a class="btn btn-primary text-white rounded-pill fw-medium" href="javascript:void()" data-bs-toggle="modal"
+            data-bs-target="#contactModal">Tư vấn ngay</a>
         </li>
       </ul>
 
@@ -97,68 +109,7 @@
       </div>
     </div>
   </section>
-  <!--Contact Modal -->
-  <div class="modal fade " id="contactModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5">Gửi yêu cầu tư vấn miễn phí</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- <div class="d-flex flex-column justify-content-center align-items-center">
-          <img src="./assets/images/logo.png" class="mb-3 w-50"  alt="">
-          
-        </div> -->
-        <div class="modal-body">
-          <div class="  fadeInUp">
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="name" placeholder="Họ và tên">
-                  <label for="name">Họ và tên</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="mail" placeholder="email">
-                  <label for="mail">email</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="mobile" placeholder="Số điện thoại">
-                  <label for="mobile">Số điện thoại</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <select class="form-select" id="service">
-                    <option selected>Digital Marketing</option>
-                    <option value="">Social Marketing</option>
-                    <option value="">Content Marketing</option>
-                    <option value="">E-mail Marketing</option>
-                  </select>
-                  <label for="service">Lựa chọn một dịch vụ</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Để lại nội dung tại đây." id="message"
-                    style="height: 130px"></textarea>
-                  <label for="message">Nội dung</label>
-                </div>
-              </div>
-              <div class="col-12 text-center">
-                <button class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase" type="submit">Gửi yêu
-                  cầu</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </div>
   <!-- Service Start -->
   <section id="scroll-down" class="container py-5">
     <div class="container px-lg-5">
@@ -201,7 +152,7 @@
             <a class="btn px-3 mt-auto mx-auto" href="">Xem thêm</a>
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-6  zoomIn">
           <div class="service-item d-flex flex-column justify-content-center text-center rounded">
             <div class="service-icon flex-shrink-0">
@@ -392,17 +343,17 @@
 
     </div>
   </section>
-  <section class=" container-xxl pt-5">
+  <section class=" pt-5">
     <div class="container">
       <div class="section-title position-relative  text-center mb-5 pb-2  fadeInUp">
         <h6 class="position-relative d-inline text-primary ps-4">Quy trình làm việc</h6>
         <h2 class="mt-2"> Quy trình <span class="text-secondary">6 bước</span> làm việc tại Megahunt</h2>
       </div>
-      <div class="container-xxl py-5">
+      <div class=" py-5">
         <div class="container">
           <div class="row gap-lg-4 process justify-content-lg-center">
-            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 mb-4 mb-lg-0 fadeIn">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/best-price.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -419,7 +370,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/contract.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -436,7 +387,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/design.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -453,7 +404,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/web-design.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -469,7 +420,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/testing.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -487,7 +438,7 @@
             </div>
 
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 fadeIn">
-              <div class="feature-item border h-100 p-4 rounded">
+              <div class=" border h-100 p-4 rounded">
                 <div class="btn-square bg-light rounded-circle mb-4 d-flex justify-content-center">
                   <img class="img-fluid" src="./assets/images/icons/deployment.png" style="width: 64px; height: 64px;"
                     alt="Icon">
@@ -522,29 +473,72 @@
           <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
             sit, sed stet lorem sit clita duo justo</p>
           <h5>Client Name</h5>
-          <span class="text-primary">Profession</span>
+          <span class="text-primary ">Profession</span>
+          <div class="d-flex gap-1 mt-2">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+          </div>
         </div>
         <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
           <img class="mb-4" src="./assets/images/testimonial-2.jpg" alt="">
           <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
             sit, sed stet lorem sit clita duo justo</p>
           <h5>Client Name</h5>
-          <span class="text-primary">Profession</span>
+          <span class="text-primary ">Profession</span>
+          <div class="d-flex gap-1 mt-2">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+          </div>
         </div>
         <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
           <img class="mb-4" src="./assets/images/testimonial-2.jpg" alt="">
           <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
             sit, sed stet lorem sit clita duo justo</p>
           <h5>Client Name</h5>
-          <span class="text-primary">Profession</span>
+          <span class="text-primary ">Profession</span>
+          <div class="d-flex gap-1 mt-2">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+          </div>
         </div>
         <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
           <img class="mb-4" src="./assets/images/testimonial-2.jpg" alt="">
           <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
             sit, sed stet lorem sit clita duo justo</p>
           <h5>Client Name</h5>
-          <span class="text-primary">Profession</span>
+          <span class="text-primary ">Profession</span>
+          <div class="d-flex gap-1 mt-2">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+          </div>
         </div>
+        <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+          <img class="mb-4" src="./assets/images/testimonial-2.jpg" alt="">
+          <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+            sit, sed stet lorem sit clita duo justo</p>
+          <h5>Client Name</h5>
+          <span class="text-primary ">Profession</span>
+          <div class="d-flex gap-1 mt-2">
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+            <span class="fa fa-star text-warning"></span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -626,7 +620,7 @@
           <div class="position-relative">
             <img class="img-fluid" src="./assets/images/download.png" alt="">
             <div class="blog__home-overlay">
-              <a class="btn btn-lg-square btn-light rounded-pill m-1" href=""><i class="fa fa-eye"></i></i></a>
+              <a class="btn btn-lg-square btn-light rounded-pill m-1" href="single-blog.html">Xem thêm</a>
             </div>
           </div>
           <div class="p-4">
@@ -638,7 +632,7 @@
           <div class="position-relative">
             <img class="img-fluid" src="./assets/images/download.png" alt="">
             <div class="blog__home-overlay">
-              <a class="btn btn-lg-square btn-light rounded-pill m-1" href=""><i class="fa fa-eye"></i></i></a>
+              <a class="btn btn-lg-square btn-light rounded-pill m-1" href="single-blog.html">Xem thêm</a>
             </div>
           </div>
           <div class="p-4">
@@ -650,7 +644,7 @@
           <div class="position-relative">
             <img class="img-fluid" src="./assets/images/download.png" alt="">
             <div class="blog__home-overlay">
-              <a class="btn btn-lg-square btn-light rounded-pill m-1" href=""><i class="fa fa-eye"></i></i></a>
+              <a class="btn btn-lg-square btn-light rounded-pill m-1" href="single-blog.html">Xem thêm</a>
             </div>
           </div>
           <div class="p-4">
@@ -663,7 +657,7 @@
             <img class="img-fluid" src="./assets/images/download.png" alt="">
             <div class="blog__home-overlay">
 
-              <a class="btn btn-lg-square btn-light rounded-pill m-1" href=""><i class="fa fa-eye"></i></i></a>
+              <a class="btn btn-lg-square btn-light rounded-pill m-1" href="single-blog.html">Xem thêm</a>
             </div>
           </div>
           <div class="p-4">
@@ -743,10 +737,11 @@
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-4">Our Office</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          <h4 class="text-white mb-4">Liên hệ</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Địa chỉ:T. Phú Lương Thượng - Quảng Phú Cầu - Ứng Hòa
+            - Hà Nội</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Hotline:0344 570 115</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>Email: info@example.com</p>
           <div class="d-flex pt-3">
             <a class="btn btn-square btn-light rounded-pill me-2 footer-social" href=""><i
                 class="fab fa-twitter"></i></a>
@@ -759,64 +754,162 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-4">Quick Links</h4>
-          <a class="btn btn-link" href="">About Us</a>
-          <a class="btn btn-link" href="">Contact Us</a>
-          <a class="btn btn-link" href="">Our Services</a>
-          <a class="btn btn-link" href="">Terms & Condition</a>
-          <a class="btn btn-link" href="">Support</a>
+          <h4 class="text-white mb-4">Megahunt.vn</h4>
+          <a class="btn btn-link" href="about.html">Về chúng tôi</a>
+          <a class="btn btn-link" href="price.html">Bảng giá thiết kế</a>
+          <a class="btn btn-link" href="blog.html">Blog Megahunt</a>
+          <a class="btn btn-link" href="contact.html">Liên hệ</a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-4">Business Hours</h4>
-          <p class="mb-1">Monday - Friday</p>
-          <h6 class="text-light">09:00 am - 07:00 pm</h6>
-          <p class="mb-1">Saturday</p>
-          <h6 class="text-light">09:00 am - 12:00 pm</h6>
-          <p class="mb-1">Sunday</p>
-          <h6 class="text-light">Closed</h6>
+          <h4 class="text-white mb-4">Dịch vụ</h4>
+          <a class="btn btn-link" href="">Phát triển ứng dụng web</a>
+          <a class="btn btn-link" href="">Phát triển ứng dụng mobile</a>
+          <a class="btn btn-link" href="">Phát triển phần mềm tuỳ chỉnh</a>
+          <a class="btn btn-link" href="">UI/UX design</a>
+          <a class="btn btn-link" href="">Digital Marketing</a>
+          <a class="btn btn-link" href="">Remote Developers</a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-4">Newsletter</h4>
-          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-          <div class="position-relative w-100">
-            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-            <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-          </div>
+          <h4 class="text-white mb-4">Trợ giúp</h4>
+          <a class="btn btn-link" href="">Tài liệu hướng dẫn</a>
+          <a class="btn btn-link" href="">Hướng dẫn thanh toán</a>
+          <a class="btn btn-link" href="">Chính sách bảo mật thông tin</a>
+          <a class="btn btn-link" href="">Điều khoản sử dụng</a>
+
         </div>
+
       </div>
     </div>
   </div>
   <!-- Footer End -->
-
-
   <!-- Copyright Start -->
   <div class="container-fluid copyright py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+          &copy; <a class="fw-medium text-light" href="#">Megahunt.vn</a>, All Right Reserved.
         </div>
         <div class="col-md-6 text-center text-md-end">
           <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-          Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+          Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">Megahunt</a>
         </div>
       </div>
     </div>
   </div>
   <!-- Copyright End -->
-
-
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
       class="fa-solid fa-arrow-up text-white"></i></a>
+  <!--Contact Modal -->
+  <div class="modal fade " id="contactModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <button type="button" class="btn bg-black text-white opacity-70 rounded-circle custom-modal-btn"
+          data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-header justify-content-center flex-column">
+          <!-- <img src="./assets/images/logo.png" class="mb-3" style="width: 180px;" alt=""> -->
+          <h3>Gửi yêu cầu tư vấn miễn phí</h3>
+          <small class="mb-0 text-muted">3.000+ doanh nghiệp & chủ shop đã tin dùng</small>
+        </div>
 
+        <div class="modal-body">
+          <div class="  fadeInUp">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                  <label for="name">Họ và tên</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="mail" placeholder="email">
+                  <label for="mail">email</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="mobile" placeholder="Số điện thoại">
+                  <label for="mobile">Số điện thoại</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select" id="service">
+                    <option selected>Digital Marketing</option>
+                    <option value="">Social Marketing</option>
+                    <option value="">Content Marketing</option>
+                    <option value="">E-mail Marketing</option>
+                  </select>
+                  <label for="service">Lựa chọn một dịch vụ</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Để lại nội dung tại đây." id="message"
+                    style="height: 110px"></textarea>
+                  <label for="message">Nội dung</label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase rounded-pill"
+                  type="submit">Gửi yêu
+                  cầu</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
+  <!--search Modal -->
+  <div class="modal fade " id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content custom-modal">
+        <button type="button" class="btn bg-black text-white opacity-70 rounded-circle custom-modal-btn"
+          data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-header justify-content-center flex-column">
+          <!-- <img src="./assets/images/logo.png" class="mb-3" style="width: 180px;" alt=""> -->
+          <h3>Tìm kiếm sản phẩm</h3>
+          <small class="mb-0 px-md-5 text-muted text-center">Chúng tôi có hơn 400+ giao diện website có sẵn đang chờ
+            bạn
+            khám phá</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="  fadeInUp">
+            <form class="d-flex search-input mx-auto">
+              <input class="form-control rounded-pill px-3" id="searchInput" placeholder="" type="text"
+                placeholder="Bạn tìm giao diện gì?">
+              <i class="fa-solid fa-magnifying-glass text-primary"></i>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <div id="overlay" class="position-fixed top-0 start-0 end-0 bottom-0"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./assets/lib/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
   <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./assets/lib/typed.js"></script>
   <script src="./assets/js/script.js"></script>
+
+  <script>
+    // Use Typed.js for typing effect in placeholder
+    var options = {
+      strings: ["Bạn tìm kiếm giao diện gì?", "Ngành hàng", "May mặc.."],
+      typeSpeed: 100,  // Typing speed (milliseconds)
+      backSpeed: 25,  // Backspacing speed (milliseconds)
+      loop: true,    // Loop indefinitely
+      attr: 'placeholder',
+      bindInputFocusEvents: true,
+    };
+    var typed = new Typed("#searchInput", options);
+
+  </script>
 </body>
 
 </html>

@@ -11952,6 +11952,46 @@ a {
   background-size: cover;
 }
 
+/*** Facts ***/
+.fact-item {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.fact-item:hover {
+  margin-top: -10px;
+  background: #ffffff !important;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+}
+
+/*** Img Border ***/
+.img-border {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+}
+
+.img-border::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 3rem;
+  bottom: 3rem;
+  border: 5px solid #0ea5e9;
+  border-radius: 6px;
+}
+
+.img-border img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 @-webkit-keyframes ani-mouse {
   0% {
     opacity: 1;
@@ -12159,6 +12199,21 @@ a {
   font-weight: 400;
   padding: 0.3rem 0;
   background: #faf5bb;
+}
+
+.custom-modal {
+  position: relative;
+}
+.custom-modal-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+@media screen and (max-width: 767px) {
+  .custom-modal-btn {
+    top: -10px;
+    right: -10px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -13858,6 +13913,74 @@ a {
   }
   .theme__category-show {
     transform: translateX(0%);
+  }
+}
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1, .notfound .notfound-404 .h1 {
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2, .notfound .h2 {
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1, .notfound .notfound-404 .h1 {
+    font-size: 162px;
+  }
+  .notfound h2, .notfound .h2 {
+    font-size: 26px;
   }
 }
 

@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kho giao diện</title>
+    <title>Liên hệ</title>
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/lib/fontawesome-free-6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 </head>
 
 <body>
@@ -21,8 +19,8 @@
             <a href="/">
                 <img src="./assets/images/logo.png" class="header__logo"
                     alt="Megahunt - Hệ thống thiết kế web tại Tuyên Quang" /></a>
-            <i class="fa-solid fa-magnifying-glass header__mobile-icon fs-5 d-lg-none text-primary"
-                data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+            <i class="fa-solid fa-magnifying-glass header__mobile-icon fs-5 d-lg-none text-primary" data-bs-toggle="modal"
+                data-bs-target="#searchModal"></i>
             <ul id="header__menu"
                 class="navbar-nav header__menu d-flex align-items-center flex-column flex-lg-row gap-lg-3 m-0 p-lg-0">
                 <!-- For mobile -->
@@ -43,8 +41,7 @@
                     </ul>
                 </li>
                 <li class="nav-item  dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="true">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                         Cộng tác
                     </a>
                     <ul class="dropdown-menu">
@@ -58,9 +55,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="blog.html">Blog</a>
                 </li>
-
-
-
+    
+    
+    
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void()" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                             class="fa-solid fa-magnifying-glass"></i></a>
@@ -70,193 +67,230 @@
                         data-bs-toggle="modal" data-bs-target="#contactModal">Tư vấn ngay</a>
                 </li>
             </ul>
-
+    
         </div>
     </header>
-
-    <section class=" py-5">
-        <div class="bg-banner  py-5 mb-3">
-            <div class="container py-md-5 ">
-                <div class="section-title position-relative  text-center mb-4 pb-2  fadeInUp">
-                    <h6 class="position-relative d-inline text-secondary  ps-4 ">Kho giao diện</h6>
-                    <h2 class="mt-2 mb-3"> Danh sách <span class="text-secondary">tất cả giao diện</span>
-                    </h2>
-                    <p class="mb-3 mx-auto text-muted" style="max-width: 700px ">Hơn 400+ mẫu giao diện web chuẩn SEO,
-                        tùy
-                        biến dễ dàng,
-                        phù hợp với mọi ngành hàng</p>
-                </div>
-                <div class="d-flex search-input mx-auto mb-5">
-                    <input class="form-control rounded-pill px-3" id="searchInput" placeholder="" type="text"
-                        placeholder="Bạn tìm giao diện gì?">
-                    <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row ">
-                <div id="theme__category" class="col-lg-3 px-4 h-100 theme__category ">
-                    <button id="theme__category-btn-mobile"
-                        class="btn btn-secondary text-white rounded-0 theme__category-btn-mobile "><i
-                            id="theme__category-btn-mobile-icon" class="fa-solid fa-filter"></i></button>
-                    <form>
-                        <h6 class="mb-3"><i class="fa-solid fa-list me-2 text-muted "></i>Danh mục</h6>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="1" id="radioExample1" />
-                            <label class="form-check-label text-muted " for="radioExample1">&nbsp;&nbsp;Tất cả</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="2" id="radioExample2" />
-                            <label class="form-check-label text-muted " for="radioExample2">&nbsp;&nbsp;Mỹ phẩm - Làm
-                                đẹp</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="3" id="radioExample3" />
-                            <label class="form-check-label text-muted " for="radioExample3">&nbsp;&nbsp;Thực phẩm - Nhà
-                                hàng</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="4" id="radioExample4" />
-                            <label class="form-check-label text-muted " for="radioExample4">&nbsp;&nbsp; Thực phẩm - Nhà
-                                hàng</label>
-                        </div>
-
-                        <hr>
-                        <h6 class="mb-3"><i class="fa-solid fa-tag me-2 text-muted fs-5"></i><ion-icon
-                                name="pricetags-outline"></ion-icon> Khoảng giá</h6>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="1" id="radioExample1" />
-                            <label class="form-check-label text-muted " for="radioExample1">&nbsp;&nbsp;Miễn phí</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="2" id="radioExample2" />
-                            <label class="form-check-label text-muted " for="radioExample2">&nbsp;&nbsp;500,000 -
-                                1,000,000 đ</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="3" id="radioExample3" />
-                            <label class="form-check-label text-muted " for="radioExample3">&nbsp;&nbsp;1,000,000 -
-                                2,000,000 đ</label>
-                        </div>
-                        <div class="list-group-item mb-3">
-                            <input class="form-check-input" type="radio" name="category" value="4" id="radioExample4" />
-                            <label class="form-check-label text-muted " for="radioExample4">&nbsp;&nbsp; 2,000,000 -
-                                3,000,000 đ</label>
-                        </div>
-                        <hr>
-                        <button type="submit"
-                            class="btn btn-outline-secondary w-100 fw-medium text-uppercase hover-color-white">Tìm
-                            Kiếm</button>
-                    </form>
-                </div>
-                <div class="col-md-12 col-lg-9 px-md-4">
-                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-md-center gap-2 ">
-                        <span class="fw-medium me-2">Sắp xếp theo:</span>
-                        <ul class="d-flex align-items-center gap-2 mb-0 flex-wrap">
-                            <li><a href="" class="theme__btn-filter theme__btn-filter-active">Giá<i
-                                        class="fa-solid fa-sort ms-2"></i></a></li>
-                            <li><a href="" class="theme__btn-filter">Dưới 1 triệu</a></li>
-                            <li><a href="" class="theme__btn-filter">Được mua nhiều nhất</a></li>
-                            <li><a href="" class="theme__btn-filter">Mới nhất</a></li>
-                        </ul>
-                    </div>
-                    <hr class="mb-4">
-                    <div class="row gap-4 justify-content-md-center justify-content-lg-start mb-5">
-                        <div
-                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
-                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
-                            <div class="p-3 d-flex flex-column w-100">
-                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
-                                <p class="text-danger fw-bold mb-3">1,360,000 đ / <del
-                                        class=" text-muted fw-normal">1,700,000 đ</del></p>
-                                <div class="d-flex gap-3">
-                                    <a href="theme-preview.html"
-                                        class="btn btn-secondary rounded-pill fw-medium text-white">Xem thử</a>
-                                    <a href="theme-detail.html"
-                                        class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
-                                        tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
-                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
-                            <div class="p-3 d-flex flex-column w-100">
-                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
-                                <p class="text-danger fs-6 fw-medium">800.000đ</p>
-                                <div class="d-flex gap-3">
-                                    <a href="theme-preview.html"
-                                        class="btn btn-secondary rounded-pill fw-medium text-white">Xem thử</a>
-                                    <a href="theme-detail.html"
-                                        class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
-                                        tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
-                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
-                            <div class="p-3 d-flex flex-column w-100">
-                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
-                                <p class="text-secondary fw-medium">Miễn phí</p>
-                                <div class="d-flex gap-3">
-                                    <a href="theme-preview.html"
-                                        class="btn btn-secondary rounded-pill fw-medium text-white">Xem thử</a>
-                                    <a href="theme-detail.html"
-                                        class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
-                                        tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
-                            <img src="./assets/images/theme-demo-2.jpg" class="theme__img img-fluid" alt="">
-                            <div class="p-3 d-flex flex-column w-100">
-                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
-                                <p class="text-secondary fw-medium">Miễn phí</p>
-                                <div class="d-flex gap-3">
-                                    <a href="theme-preview.html"
-                                        class="btn btn-secondary rounded-pill fw-medium text-white">Xem thử</a>
-                                    <a href="theme-detail.html"
-                                        class="btn btn-outline-secondary rounded-pill hover-color-white">Chi
-                                        tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-6 col-lg-3 theme__item shadow-sm  d-flex justify-content-center align-items-center flex-column  rounded-3 ">
-                            <img src="./assets/images/theme-demo.jpg" class="theme__img img-fluid" alt="">
-                            <div class="p-3 d-flex flex-column w-100">
-                                <h3 class="fs-5"><a href="">Tên sản phẩm</a></h3>
-                                <p class="text-secondary fw-medium">Miễn phí</p>
-                                <div class="d-flex gap-3">
-                                    <a href="theme-preview.html"
-                                        class="btn btn-secondary rounded-pill fw-medium text-white">Xem thử</a>
-                                    <a href="theme-detail.html"
-                                        class="btn btn-outline-secondary rounded-pill  hover-color-white">Chi
-                                        tiết</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="" class="text-secondary fw-medium">Xem thêm giao diện <i
-                                class="fa-solid fa-caret-down"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="breadcrumb-section fw-medium">
+        <nav aria-label="breadcrumb" class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Liên hệ tư vấn</li>
+            </ol>
+        </nav>
     </section>
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item  bg-light shadow-sm rounded text-center h-100 p-5">
+                        <i class="fa-solid fa-award fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Years Experience</h5>
+                        <h3 class=" mb-0" data-toggle="counter-up">4+</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item  bg-light shadow-sm rounded text-center h-100 p-5">
+                        <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Team Members</h5>
+                        <h3 class=" mb-0" data-toggle="counter-up">20+</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item  bg-light shadow-sm rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Satisfied Clients</h5>
+                        <h3 class=" mb-0" data-toggle="counter-up">100+</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light shadow-sm     rounded text-center h-100 p-5">
+                        <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Projects Done</h5>
+                        <h3 class=" mb-0" data-toggle="counter-up">120+</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="./assets/images/single_blog_1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <div class="section-title position-relative  mb-5 pb-2  fadeInUp">
+                            <h6 class="position-relative d-inline text-primary ps-4">Về chúng tôi</h6>
+                            <h2 class="mt-2"><span class="text-secondary">Đối tác số 1</span> cho giải pháp kỹ thuật số
+                                tại Việt Nam.
+                            </h2>
+                        </div>
+                        <p>Chúng tôi là đội ngũ đam mê khám phá và sáng tạo, xem bạn như đối tác quan trọng. Với đội ngũ
+                            IT chuyên
+                            nghiệp và nhiều năm kinh nghiệm, chúng tôi cam kết mang đến sản phẩm phần mềm, website, và
+                            ứng dụng tối ưu, đồng thời
+                            cung cấp đầy đủ dịch vụ như
+                            quản trị nội dung, chỉnh sửa video, để giúp doanh nghiệp của bạn phát triển mạnh mẽ trên thị
+                            trường số.
+                        </p>
+
+                        <h5>Tầm Nhìn:</h5>
+                        <p>Dẫn đầu trong cung cấp giải pháp công nghệ thông tin, Megahunt cam kết tiết kiệm chi phí và
+                            tạo
+                            giá trị tối đa, đồng
+                            hành bền vững với thương hiệu.</p>
+
+                        <h5>Sứ Mệnh:</h5>
+                        <p>Dành những dịch vụ tối ưu, với sự hài lòng của khách hàng là ưu tiên hàng đầu. Luôn tập trung
+                            vào khách hàng, tôn trọng,
+                            lắng nghe và không ngừng cải tiến.</p>
+
+                        <h5>Giá Trị Cốt Lõi:</h5>
+                        <p>Chú trọng vào lợi ích dài lâu, với Công Nghệ Thông Tin làm nền tảng. Megahunt - Năng động,
+                            sáng
+                            tạo, và thân thiện.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <div class="section-title position-relative  mb-5 pb-2  fadeInUp">
+                            <h6 class="position-relative d-inline text-primary ps-4">tại sao chọn chúng tôi</h6>
+                            <h2 class="mt-2"> Tại sao mọi người <span class="text-secondary">tin tưởng chúng tôi?</span>
+                                Tìm hiểu về chúng tôi!
+                            </h2>
+                        </div>
+                        <p class="mb-4">
+                            <strong>Megahunt</strong> là một agency hoạt động theo mô hình <a
+                                href="https://www.upwork.com/resources/what-is-remote-work" class="text-primary"
+                                target="_blank" rel="noopener noreferrer">"Remote Work"</a>. Chúng tôi không chỉ mang
+                            đến sự
+                            linh hoạt và tiết kiệm chi
+                            phí mà còn đặt sự chuyên nghiệp và kinh nghiệm làm việc trong lĩnh vực kỹ thuật số lên hàng
+                            đầu. Đội ngũ nhân viên của
+                            chúng tôi sở hữu nhiều năm kinh nghiệm, cam kết đem lại cho bạn những giải pháp hiệu quả và
+                            chất lượng vượt trội.
+                        </p>
+                        <ul>
+                            <li class="mb-3"><strong>1. Tiết Kiệm Chi Phí:</strong> Nhận được dịch vụ hiệu quả với chi
+                                phí giảm do không có
+                                chi phí văn
+                                phòng truyền thống, giúp tiết
+                                kiệm ngân sách của bạn.</li>
+                            <li class="mb-3"> <strong>2. Đội Ngũ Đa Dạng và Tài Năng Toàn Cầu:</strong> Tận dụng đội ngũ
+                                làm việc từ
+                                xa với kỹ năng đa
+                                dạng và chuyên môn, mang đến sự
+                                sáng tạo và linh hoạt.
+                            </li>
+                            <li class="mb-3"> <strong>3. Phản Hồi Nhanh Chóng và Linh Hoạt:</strong> Đảm bảo dự án của
+                                bạn được thực
+                                hiện nhanh chóng và
+                                linh hoạt với đội ngũ làm việc từ
+                                mọi nơi.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="./assets/images/single_blog_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+<section class="container-xxl py-5">
+    <div class="container">
+        <div class="section-title position-relative text-center mb-5 pb-2  fadeInUp">
+            <h6 class="position-relative d-inline text-primary ps-4">Đội của chúng tôi</h6>
+            <h2 class="mt-2"><span class="text-secondary">Những chuyên gia</span> của chúng tôi sẵn sàng giúp đỡ bạn
+            </h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6  fadeInUp">
+                <div class="team-item rounded overflow-hidden pb-4">
+                    <img class="img-fluid mb-4" src="./assets/images/team-1.jpg" alt="">
+                    <h5>Alex Robin</h5>
+                    <span class="text-primary">Founder & CEO</span>
+                    <ul class="team-social">
+                        <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  fadeInUp">
+                <div class="team-item rounded overflow-hidden pb-4">
+                    <img class="img-fluid mb-4" src="./assets/images/team-1.jpg" alt="">
+                    <h5>Adam Crew</h5>
+                    <span class="text-primary">Co Founder</span>
+                    <ul class="team-social">
+                        <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  fadeInUp">
+                <div class="team-item rounded overflow-hidden pb-4">
+                    <img class="img-fluid mb-4" src="./assets/images/team-1.jpg" alt="">
+                    <h5>Boris Johnson</h5>
+                    <span class="text-primary">Executive Manager</span>
+                    <ul class="team-social">
+                        <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  fadeInUp">
+                <div class="team-item rounded overflow-hidden pb-4">
+                    <img class="img-fluid mb-4" src="./assets/images/team-1.jpg" alt="">
+                    <h5>Robert Jordan</h5>
+                    <span class="text-primary">Digital Marketer</span>
+                    <ul class="team-social">
+                        <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5  fadeIn">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Liên hệ</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Địa chỉ:T. Phú Lương Thượng - Quảng Phú Cầu
-                        -
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Địa chỉ:T. Phú Lương Thượng - Quảng Phú Cầu -
                         Ứng Hòa
                         - Hà Nội</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Hotline:0344 570 115</p>
@@ -294,9 +328,9 @@
                     <a class="btn btn-link" href="">Hướng dẫn thanh toán</a>
                     <a class="btn btn-link" href="">Chính sách bảo mật thông tin</a>
                     <a class="btn btn-link" href="">Điều khoản sử dụng</a>
-
+    
                 </div>
-
+    
             </div>
         </div>
     </div>
@@ -330,7 +364,7 @@
                     <h3>Gửi yêu cầu tư vấn miễn phí</h3>
                     <small class="mb-0 text-muted">3.000+ doanh nghiệp & chủ shop đã tin dùng</small>
                 </div>
-
+    
                 <div class="modal-body">
                     <div class="  fadeInUp">
                         <div class="row g-3">
@@ -371,15 +405,14 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button
-                                    class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase rounded-pill"
+                                <button class="btn btn-primary w-100 py-3 text-white fw-bold text-uppercase rounded-pill"
                                     type="submit">Gửi yêu
                                     cầu</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </div>
@@ -392,13 +425,12 @@
                 <div class="modal-header justify-content-center flex-column">
                     <!-- <img src="./assets/images/logo.png" class="mb-3" style="width: 180px;" alt=""> -->
                     <h3>Tìm kiếm sản phẩm</h3>
-                    <small class="mb-0 px-md-5 text-muted text-center">Chúng tôi có hơn 400+ giao diện website có sẵn
-                        đang
+                    <small class="mb-0 px-md-5 text-muted text-center">Chúng tôi có hơn 400+ giao diện website có sẵn đang
                         chờ
                         bạn
                         khám phá</small>
                 </div>
-
+    
                 <div class="modal-body">
                     <div class="  fadeInUp">
                         <form class="d-flex search-input mx-auto">
@@ -408,7 +440,7 @@
                         </form>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </div>
@@ -418,7 +450,7 @@
     <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="./assets/lib/typed.js"></script>
     <script src="./assets/js/script.js"></script>
-
+    
     <script>
         // Use Typed.js for typing effect in placeholder
         var options = {
