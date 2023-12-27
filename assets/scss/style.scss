@@ -12,7 +12,7 @@ $light: #ffff;
 $dark: #1e293b;
 $nav-pills-border-radius: 5px;
 $form-check-input-checked-bg-color: $secondary;
-@import "../lib/bootstrap-5.3.2/scss/bootstrap.scss";
+@import "../lib/bootstrap/scss/bootstrap.scss";
 @import "bootstrap";
 @import "config";
 @import "header";
